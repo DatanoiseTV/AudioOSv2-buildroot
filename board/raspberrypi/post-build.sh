@@ -16,7 +16,7 @@ modprobe snd_soc_bcm2835_i2s
 modprobe snd_soc_pisound
 modprobe snd-seq
 
-start-stop-daemon -x /root/start-jack.sh --background --pidfile /tmp/jack.run
+start-stop-daemon -S -x /root/start-jack.sh -n jackd -b -p /tmp/jack.run
 EOF
 
 chmod +x ${TARGET_DIR}/etc/init.d/S99Audio
