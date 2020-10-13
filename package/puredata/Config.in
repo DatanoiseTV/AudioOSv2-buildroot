@@ -1,0 +1,27 @@
+config BR2_PACKAGE_PUREDATA
+ bool "puredata"
+ depends on BR2_USE_MMU # fork()
+ depends on BR2_TOOLCHAIN_HAS_THREADS # alsa-lib
+
+ select BR2_PACKAGE_ALSA_LIB
+ help
+  Pure Data is an open source visual programming language for
+  multimedia. This is the Pd Vanilla distribution.
+
+  https://puredata.info/
+
+if BR2_PACKAGE_PUREDATA
+
+config BR2_PACKAGE_PUREDATA_JACK
+ bool "JACK support for Pure Data"
+ depends on BR2_PACKAGE_JACK2
+ help
+  JACK is a low-latency sound server
+
+  http://jackaudio.org/
+
+endif
+
+comment "puredata needs a toolchain w/ threads"
+ depends on BR2_USE_MMU
+ depends on !BR2_TOOLCHAIN_HAS_THREADS
