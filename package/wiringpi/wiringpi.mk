@@ -5,7 +5,7 @@
 ################################################################################
 
 WIRINGPI_VERSION = 2.46
-WIRINGPI_SITE = https://github.com/WiringPi/WiringPi.git
+WIRINGPI_SITE = git://git.drogon.net/wiringPi
 
 WIRINGPI_LICENSE = LGPL-3.0+
 WIRINGPI_LICENSE_FILES = COPYING.LESSER
