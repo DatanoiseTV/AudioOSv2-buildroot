@@ -1,0 +1,3 @@
+[submodule "overlay/root/pd_examples/oscAutomataPD"]
+	path = overlay/root/pd_examples/oscAutomataPD
+	url = https://github.com/CarloCattano/oscAutomataPD.git
