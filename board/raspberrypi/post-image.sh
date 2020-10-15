@@ -7,6 +7,11 @@ BOARD_NAME="$(basename ${BOARD_DIR})"
 GENIMAGE_CFG="${BOARD_DIR}/genimage-${BOARD_NAME}.cfg"
 GENIMAGE_TMP="${BUILD_DIR}/genimage.tmp"
 
+
+cat << EOF > "${BINARIES_DIR}/rpi-firmware/cmdline.txt"
+root=/dev/mmcblk0p2 rootwait console=tty1 console=ttyAMA0,115200 quiet init=/dainit
+EOF
+
 for arg in "$@"
 do
 	case "${arg}" in

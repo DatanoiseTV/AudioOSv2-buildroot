@@ -1,0 +1,4 @@
+# Network support
+
+Startup: /sbin/ifup -a
+Provides: net

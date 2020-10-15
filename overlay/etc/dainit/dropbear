@@ -1,0 +1,5 @@
+# Dropbear SSH server
+
+Provides: ssh
+Requires: net entropy
+Startup: /usr/sbin/dropbear -R

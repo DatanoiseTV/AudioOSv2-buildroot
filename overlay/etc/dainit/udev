@@ -1,0 +1,4 @@
+# udev daemon
+
+Provides: devfs
+Startup: /sbin/udevd -d

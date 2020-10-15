@@ -1,0 +1,4 @@
+# MIDI auto patchbay
+
+Provides: amidiauto
+Startup: start-stop-daemon -S -x /sbin/amidiauto -n amidiauto -b -p /tmp/amidiauto.run

@@ -1,0 +1,4 @@
+# Kernel Modules
+
+Provides: modules
+Startup: modprobe spi_bcm2835; modprobe snd_soc_bcm2835_i2s; modprobe snd_soc_pisound; modprobe snd-seq

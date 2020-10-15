@@ -1,0 +1,5 @@
+# PureData Runtime
+
+Requires: jackd
+Provides: pd
+Startup: start-stop-daemon -S -x /root/start-pd.sh -n pd -b -p /tmp/pd.run

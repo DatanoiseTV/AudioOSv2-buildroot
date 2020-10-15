@@ -1,0 +1,4 @@
+# Entropy gathering daemon haveged
+
+Provides: entropy
+Startup: /usr/sbin/haveged -w 1024 -r 0 2>&1 > /dev/null

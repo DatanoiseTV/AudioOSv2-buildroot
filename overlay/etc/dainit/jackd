@@ -1,0 +1,5 @@
+# JACK Audio Server
+
+Requires: modules
+Provides: jackd
+Startup: start-stop-daemon -S -x /root/start-jack.sh -n jackd -b -p /tmp/jack.run
